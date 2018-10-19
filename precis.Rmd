@@ -1,0 +1,36 @@
+---
+title: "Final Project - GOV 1005"
+author: "Shriank Kanaparti"
+date: "10/19/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+accidents <- read_csv('road-accidents-2017.csv')
+casualties <- read_csv('road-casualities-2017.csv')
+vehicles <- read_csv('road-vehicles-2017.csv')
+```
+
+## An analysis of Road Safety in UK in 2017
+
+For my final project, I'd like to analyze the state of road safety in Great Britain for the year 2017. I'm using the [3 datasets (2017)](https://data.gov.uk/dataset/cb7ae6f0-4be6-4935-9277-47e5ce24a11f/road-safety-data) provided by the UK government. I'm looking to (1) map out the accidents by vehicle, type of accident, location to (2) calculate various density metrics, and lastly am looking to (3) give a road safety rating to the various places in UK.
+
+## Quick preview of the datasets:
+
+1. Accidents
+```{r}
+glimpse(accidents)
+```
+
+2. Vehicles
+```{r}
+glimpse(vehicles)
+```
+
+3. Casualities
+```{r}
+glimpse(casualties)
+```
+
